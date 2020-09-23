@@ -14,9 +14,7 @@ public class tests_with_video {
     
     @Test
     void easy_selenide_test_google() {
-        step("Открыть гугл", ()-> {
-            open("https://www.google.com/");
-        });
+        open("https://www.google.com/");
         step("Выполнить запрос", ()-> {
             $("[name=\"q\"]").setValue("wikipedia").pressEnter();
         });
