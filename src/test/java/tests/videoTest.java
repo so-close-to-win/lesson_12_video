@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class testsWithVideo {
+public class videoTest extends TestBase{
 
     @Test
     void easy_selenide_test_google() {
