@@ -21,4 +21,17 @@ public class videoTest extends TestBase{
             $("body").shouldHave(text("wikipedia.org"));
         });
     }
+
+    @Test
+    void easy_selenide_test_google2() {
+        step("Открыть гугл", ()-> {
+            open("https://www.google.com/");
+        });
+        step("Выполнить запрос", ()-> {
+            $("[name=\"q\"]").setValue("wikipedia").pressEnter();
+        });
+        step("Проверить ответ", ()-> {
+            $("body").shouldHave(text("wikipedia2.org"));
+        });
+    }
 }
